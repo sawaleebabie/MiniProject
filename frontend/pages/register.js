@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import Navbar from '../components/navbar'
 import axios from 'axios'
 import config from '../config/config'
+import styles from '../styles/Home.module.css'
 
 export default function Register({ token }) {
 
@@ -36,7 +37,7 @@ export default function Register({ token }) {
     }
 
     const registerForm = () => (
-        <div>
+        <div className={styles.gridContainer}>
             <div>
                 <b>Username:</b>
             </div>
@@ -75,11 +76,11 @@ export default function Register({ token }) {
             <Head>
                 <title>Register Page</title>
             </Head>
-            <div>
+            <div className={styles.container}>
                 <Navbar />
                 <h1>Register</h1>
                 <div><b>Token:</b> {token.substring(0, 15)}...
-                <button
+                <button className={styles.btn1}
                     onClick={() => { navigator.clipboard.writeText(token) }}>
                     Copy token
                 </button>
@@ -87,12 +88,12 @@ export default function Register({ token }) {
                 <br />
             <b>Status: </b> <i>{status}</i>
                 <br /><br />
-                <div>
+                <div className={styles.content}>
                     {registerForm()}
                 </div>
 
                 <div>
-                    <button
+                    <button className={styles.btn}
                     onClick={register}>Register</button>
                 </div>
             </div>

@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import withAuth from "../components/withAuth";
 import Navbar from "../components/navbar";
+import styles from "../styles/admin.module.css";
 const URL = "http://localhost:8080/api/laundry";
 
 const admin = ({ token }) => {
@@ -10,7 +11,7 @@ const admin = ({ token }) => {
   const [CustomerID, setCustomerID] = useState("");
   const [name, setName] = useState("");
   const [surname, setSurname] = useState("");
-  const [status, serStatus] = useState("");
+  const [status, setStatus] = useState("");
   const [price, setPrice] = useState(0);
   const [customer, setCustomer] = useState({});
 
@@ -74,24 +75,24 @@ const admin = ({ token }) => {
     if (customers && customers.length) {
       return customers.map((item, index) => {
         return (
-          <div key={index}>
+          <div className={styles.listItem} key={index}>
             <div><b>CustomerID:</b> {item.CustomerID}</div>
             <div><b>Name:</b> {item.name}</div>
             <div><b>Surname:</b> {item.surname}</div>
             <div><b>status:</b> {item.status}</div>
             <div><b>price:</b> {item.price}</div>
-            <div>
-              <button
+            <div className={styles.edit_button}>
+              <button className={styles.button_get}
                 onClick={() => getCustomer(item.id)}
               >
                 Get
               </button>
-              <button
+              <button className={styles.button_update}
                 onClick={() => updateCustomer(item.id)}
               >
                 Update
               </button>
-              <button
+              <button className={styles.button_delete}
                 onClick={() => deleteCustomer(item.id)}
               >
                 Delete
@@ -105,10 +106,10 @@ const admin = ({ token }) => {
     }
   };
   return (
-    <div>
+    <div className={styles.container}>
       <Navbar />
       <h1><ins>customer Data Edit </ins></h1>
-      <div>
+      <div className={styles.form_add}>
         <h2>Add customers</h2>
         CustomerID:
         <input
@@ -132,7 +133,7 @@ const admin = ({ token }) => {
         <input
           type="text"
           name="status"
-          onChange={(e) => serStatus(e.target.value)}
+          onChange={(e) => setStatus(e.target.value)}
         ></input>
         price:
         <input
@@ -140,15 +141,15 @@ const admin = ({ token }) => {
           name="price"
           onChange={(e) => setPrice(e.target.value)}
         ></input>
-        <button
+        <button className={styles.button_add}
           onClick={() => addCustomer(CustomerID, name, surname, status, price)}
         >
           Add
         </button>
       </div>
 
-      <div>{showCustomers()}</div>
-      <div><b>(selected customer):</b> 
+      <div className={styles.list}>{showCustomers()}</div>
+      <div className={styles.list}><b>(selected customer):</b> 
               <b>CustomerID:</b>{customer.CustomerID} 
               <b>Name:</b>{customer.name} 
               <b>Surname:</b>{customer.surname}  

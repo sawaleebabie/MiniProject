@@ -4,6 +4,7 @@ import Navbar from '../components/navbar'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import config from '../config/config'
+import styles from '../styles/Home.module.css'
 
 export default function Logout({ token }) {
 
@@ -24,7 +25,7 @@ export default function Logout({ token }) {
             <Head>
                 <title>Logout Page</title>
             </Head>
-            <div>
+            <div className={styles.container}>
                 <Navbar />
                 <h1>Logout</h1>
                 <div>
