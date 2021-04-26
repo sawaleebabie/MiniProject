@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import useSWR, { mutate } from "swr";
 import React, { } from "react";
 import Navbar from "../components/navbar";
+import Image from 'next/image' 
 import styles from "../styles/Index.module.css";
 const URL = "http://localhost:8080/api/laundry";
 const fetcher = (key) => fetch(key).then((res) => res.json());
@@ -32,17 +33,27 @@ const index = () => {
   };
   return (
     <Layout>
-       <Head>
+      <Head>
         <title>Home Page</title>
-    </Head>
-    <div className={styles.container}><Navbar />
-      <div className={styles.title}>
-</div>
-      <div className={styles.list}>
-        {showCustomers()}
+      </Head>
+      <div>
+        <Image
+          src="/page.png"
+          alt="Picture"
+          width={900}
+          height={200}
+          sizes="(max-width: 500px) 100px"
+        />
       </div>
-      
-    </div>
+      <div className={styles.container}>
+        <Navbar />
+        <div className={styles.container1}>
+          <div className={styles.title}></div>
+          <div className={styles.list}>
+            {showCustomers()}
+          </div> 
+        </div>
+      </div>
     </Layout>
   );
 };

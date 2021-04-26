@@ -1,10 +1,12 @@
 import Head from "next/head";
+import Link from 'next/link'
 import Layout from "../components/layout";
 import { useState } from "react";
 import Navbar from "../components/navbar";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/logInOut.module.css";
 import axios from "axios";
 import config from "../config/config";
+import Image from 'next/image' 
 
 export default function Login({ token }) {
   const [username, setUsername] = useState("");
@@ -70,9 +72,19 @@ export default function Login({ token }) {
       <Head>
         <title>Login Page</title>
       </Head>
+      <div>
+          <Image
+            src="/page.png"
+            alt="Picture"
+            width={900}
+            height={200}
+            sizes="(max-width: 500px) 100px"
+          />
+      </div>
       <div className={styles.container}>
         <Navbar />
-        <h1>Login</h1>
+        <div className={styles.Login}>
+          <h1>Login</h1>
         <div>
           <b>Token:</b> {token.substring(0, 15)}...
           <button className={styles.btn1} onClick={copyText}> Copy token </button>
@@ -81,12 +93,16 @@ export default function Login({ token }) {
         <div>Status: {status}</div>
         <br />
         {loginForm()}
+        <Link href="/register"><a> <b>REGISTER</b> </a></Link> 
         <div>
           <button className={styles.btn2} onClick={login}>Login</button>
         </div>
+        </div>
+        
+        
       </div>
     </Layout>
-  );
+  ); 
 }
 
 export function getServerSideProps({ req, res }) {

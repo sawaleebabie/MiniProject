@@ -1,0 +1,113 @@
+
+  .button_add {
+    background-color: rgb(29, 119, 204);
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-top: 15px;
+  }
+  .list {
+    display: flex;
+    justify-content: center;
+    font-family: "Monaco",  monospace;
+    list-style: none;
+    margin: 10px;
+    padding: 1px;
+    flex-wrap: wrap;
+    width: 80vw;
+  }
+  .list1 {
+    background-color: rgb(75, 105, 93);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 35px;
+    padding: 15px;
+    flex-wrap: wrap;
+    width: 80vw;
+  }
+  .container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    /* padding-top: 6%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .listItem {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid rgb(151, 151, 151);
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  .listItem > div{
+    margin: 8px 8px;
+  }
+  .form_add {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 8px solid rgba(0, 0, 0, 0.205);
+    font-size: 1.6rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .form_add1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    font-size: 1.4rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .addyourData{
+      margin-top: -13px;
+      margin-bottom: 50px;
+  }
+  
+  .text {
+    text-align: center;
+    color: rgb(40, 185, 35);
+    size: 15px;
+  }
+
+  .button_ID {
+    background-color: rgb(134, 185, 187);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.button_ID:hover{
+    background-color: #c5c2b1;
+    color: #fff;
+  } 
+
+  .wight{
+      font-size: 8px;
+      background-color: rgb(254, 255, 217);
+      border-radius: 5px;
+      width: 380px;
+  }
+
+
