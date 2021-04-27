@@ -6,6 +6,7 @@ import Navbar from "../components/navbar";
 import Image from 'next/image' 
 import styles from "../styles/Index.module.css";
 
+
 const URL = "http://localhost:8080/api/laundry";
 const fetcher = (key) => fetch(key).then((res) => res.json());
 

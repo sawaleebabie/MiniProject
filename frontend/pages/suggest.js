@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 import Image from 'next/image' 
 import styles from "../styles/suggest.module.css";
 import Head from 'next/head'
+import config from '../config/config'
 const URL = "http://localhost:8080/api/laundry";
 
 const suggest = () => {

@@ -5,8 +5,9 @@ import Navbar from "../components/navbar";
 import styles from "../styles/admin.module.css";
 import Image from 'next/image' 
 import Head from 'next/head' 
+import config from '../config/config'
 
-const URL = "http://localhost:8080/api/laundry";
+const URL = "http://localhost:8080/api/laundry"; 
 
 const admin = ({ token }) => {
   const [user, setUser] = useState({});
