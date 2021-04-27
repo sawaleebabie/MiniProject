@@ -3,12 +3,16 @@ import React, { } from "react";
 import Navbar from "../components/navbar";
 import Image from 'next/image' 
 import styles from "../styles/suggest.module.css";
+import Head from 'next/head'
 const URL = "http://localhost:8080/api/laundry";
 
 const suggest = () => {
   
   return (
     <Layout>
+      <Head>
+          <title>Suggest</title>
+      </Head>
       <div>
         <Image
           src="/laundry.png"

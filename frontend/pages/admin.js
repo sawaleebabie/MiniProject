@@ -4,6 +4,8 @@ import withAuth from "../components/withAuth";
 import Navbar from "../components/navbar";
 import styles from "../styles/admin.module.css";
 import Image from 'next/image' 
+import Head from 'next/head' 
+
 const URL = "http://localhost:8080/api/laundry";
 
 const admin = ({ token }) => {
@@ -113,6 +115,9 @@ const admin = ({ token }) => {
   };
   return ( 
     <div>
+      <Head>
+          <title>Admin</title>
+      </Head>
       <div>
         <Image
           src="/laundry.png"
@@ -129,42 +134,59 @@ const admin = ({ token }) => {
           <tr>
             <th>
               <div className={styles.form_add}>
-                <h2>Add customers</h2>
-                CustomerID:
-                <input
-                  type="text"
-                  name="CustomerID"
-                  value = {CustomerID}
-                  onChange={(e) => setCustomerID(e.target.value)}
-                ></input>
-                Name:
-                <input
-                  type="text"
-                  name="name"
-                  value = {name}
-                  onChange={(e) => setName(e.target.value)}
-                ></input>
-                Surname:
-                <input
-                  type="text"
-                  name="surname"
-                  value = {surname}
-                  onChange={(e) => setSurname(e.target.value)}
-                ></input>
-                Status:
-                <input
-                  type="text"
-                  name="status"
-                  value = {status}
-                  onChange={(e) => setStatus(e.target.value)}
-                ></input>
-                Price:
-                <input
+                <h2>Add customers</h2>       
+                <div className={styles.adminPage}>
+                  <div><b>CustomerID: </b></div>
+                  <div>
+                    <input
+                      type="text"
+                      name="CustomerID"
+                      value = {CustomerID}
+                      onChange={(e) => setCustomerID(e.target.value)}
+                    ></input>
+                  </div>
+
+                  <div><b>Name:</b></div>
+                  <div>
+                    <input
+                      type="text"
+                      name="name"
+                      value = {name}
+                      onChange={(e) => setName(e.target.value)}
+                    ></input>
+                  </div>
+
+                <div><b>Surname:</b></div>
+                <div>
+                  <input   
+                    type="text"
+                    name="surname"
+                    value = {surname}
+                    onChange={(e) => setSurname(e.target.value)}
+                  ></input>
+                </div>
+
+                <div><b>Status:</b></div>
+                <div>
+                  <input
+                    type="text"
+                    name="status"
+                    value = {status}
+                    onChange={(e) => setStatus(e.target.value)}
+                  ></input>
+                </div>
+
+               <div><b>Price:</b></div>
+               <div>
+                 <input
                   type="number"
                   name="price"
                   value = {price}
                   onChange={(e) => setPrice(e.target.value)}
                 ></input>
+              </div>
+              </div>
+                
                 <button className={styles.button_add}onClick={() => addCustomer(CustomerID, name, surname, status, price)}>
                   Add
                 </button>

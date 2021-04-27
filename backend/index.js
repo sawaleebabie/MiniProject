@@ -25,8 +25,6 @@ router.post("/login", (req, res, next) => {
     console.log("Login: ", req.body, user, err, info);
     if (err) return next(err);
     if (user) {
-
-      
         if (req.body.remember == true) {
           time_exp = "7d";
         } 
@@ -34,7 +32,6 @@ router.post("/login", (req, res, next) => {
         const token = jwt.sign(user, db.SECRET, {
           expiresIn: time_exp,
         });
-
 
         var decoded = jwt.decode(token);
         let time = new Date(decoded.exp * 1000);

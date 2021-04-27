@@ -6,13 +6,14 @@ import Navbar from "../components/navbar";
 import styles from "../styles/logInOut.module.css";
 import axios from "axios";
 import config from "../config/config";
-import Image from 'next/image' 
+import Image from 'next/image'
 
 export default function Login({ token }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [status, setStatus] = useState("");
   const [remember, setRemember] = useState(false);
+
   const login = async (req, res) => {
     try {
       let result = await axios.post(`${config.URL}/login`,{ username, password, remember },{ withCredentials: true });
@@ -50,7 +51,7 @@ export default function Login({ token }) {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <div className="flex items-center">
+      <div>
         <input
           id="remember_me"
           name="remember_me"
@@ -61,10 +62,6 @@ export default function Login({ token }) {
       <div ><label><ins><b>Remember Me</b></ins></label></div>
     </div>
   );
-
-  const copyText = () => {
-    navigator.clipboard.writeText(token);
-  };
 
   return (
     <Layout>
@@ -90,16 +87,9 @@ export default function Login({ token }) {
             <button className={styles.btn2} onClick={login}>LOGIN</button>
             <button className={styles.btnRe}><Link href="/register"><a> <span>REGISTER</span> </a></Link></button>     
           </div>
-          <br /><br />
-          <div className={styles.text3}>
-              <b>Token:</b> <b className={styles.text4}>{token.substring(0, 15)}...</b>
-              <button className={styles.btn1} onClick={copyText}> COPY </button>
-              <button className={styles.btn1} onClick={() => {window.open('https://jwt.io');}}> CHECK</button>
-          </div>
-
         </div> 
-      </div>
-    </Layout>
+      </div> 
+    </Layout> 
   ); 
 }
 

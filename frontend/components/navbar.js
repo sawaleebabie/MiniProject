@@ -8,7 +8,7 @@ const Navbar = () => (
         <button className={styles.buttonNav}><Link href="/customer"><a> <b>CUSTOMER</b> </a></Link> </button>    
         <button className={styles.buttonNav}><Link href="/admin"><a> <b>ADMIN</b> </a></Link></button>  
         <button className={styles.buttonNavLogin}><Link href="/login"><a> <b>LOGIN</b> </a></Link> </button>    
-        <button className={styles.buttonNavLogout}><Link href="/logout"><a> <b>LOGOUT</b> </a></Link> </button>   
+        <button className={styles.buttonNavLogout}><Link href="/logout"><a> <b>LOGOUT</b> </a></Link> </button> 
     </div>  
 )
 

@@ -66,7 +66,6 @@ export default function Register({ token }) {
                     placeholder="password"
                     onChange={(e) => setPassword(e.target.value)} />
             </div>
-
         </div>
     )
 
@@ -87,14 +86,6 @@ export default function Register({ token }) {
                     <div>
                         <button className={styles.btn}
                         onClick={register}>Register</button>
-                    </div>
-                    <br /><br />
-                    <div className={styles.text3}><b>TOKEN :  </b > <b className={styles.text4}>{token.substring(0, 15)}... </b>
-                        <button className={styles.btn1}
-                            onClick={() => { navigator.clipboard.writeText(token) }}>
-                                COPY
-                        </button>
-                        <button className={styles.btn1} onClick={() => {window.open('https://jwt.io');}}> CHECK</button>
                     </div>
                 </div>
                 

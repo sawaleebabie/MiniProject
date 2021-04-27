@@ -171,3 +171,22 @@
   font-size: 25px;
   color: rgb(81, 110, 138);
 }
+.adminPage{
+    display: grid;
+    grid-template-columns: 100px auto;
+    margin-bottom: 16px;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Karantina', cursive;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.adminPage>div {
+  font-family: "Monaco",  monospace;
+  color: rgb(66, 66, 66);
+  text-align: left;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: 'Karantina', cursive;
+  font-family: 'Varela Round', sans-serif;
+}
