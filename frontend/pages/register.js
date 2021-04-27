@@ -5,7 +5,6 @@ import Navbar from '../components/navbar'
 import axios from 'axios'
 import config from '../config/config'
 import styles from '../styles/logInOut.module.css'
-import Image from 'next/image' 
 
 export default function Register({ token }) {
 
@@ -77,36 +76,26 @@ export default function Register({ token }) {
             <Head>
                 <title>Register Page</title>
             </Head>
-            <div>
-                <Image
-                    src="/page.png"
-                    alt="Picture"
-                    width={900}
-                    height={200}
-                    sizes="(max-width: 500px) 100px"
-                />
-            </div>
             <div className={styles.container}>
                 <Navbar />
                 <div className={styles.Login}>
-                    <h1>Register</h1>
-                    <div><b>Token:</b> {token.substring(0, 15)}...
-                        <button className={styles.btn1}
-                            onClick={() => { navigator.clipboard.writeText(token) }}>
-                                Copy token
-                        </button>
-                    </div>
-                    <br />
-                    <b>Status: </b> <i>{status}</i>
-                    <br /><br />
+                    <div className={styles.text1}><h1>Register</h1></div>
+                    <div className={styles.text2}>Status: {status}</div> <br />
                     <div className={styles.content}>
                         {registerForm()}
                     </div>
-
-                <div>
-                    <button className={styles.btn}
-                    onClick={register}>Register</button>
-                </div>
+                    <div>
+                        <button className={styles.btn}
+                        onClick={register}>Register</button>
+                    </div>
+                    <br /><br />
+                    <div className={styles.text3}><b>TOKEN :  </b > <b className={styles.text4}>{token.substring(0, 15)}... </b>
+                        <button className={styles.btn1}
+                            onClick={() => { navigator.clipboard.writeText(token) }}>
+                                COPY
+                        </button>
+                        <button className={styles.btn1} onClick={() => {window.open('https://jwt.io');}}> CHECK</button>
+                    </div>
                 </div>
                 
             </div>

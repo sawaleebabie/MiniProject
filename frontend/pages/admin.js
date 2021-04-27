@@ -111,11 +111,11 @@ const admin = ({ token }) => {
       return <p>Loading...</p>;
     }
   };
-  return (
+  return ( 
     <div>
       <div>
         <Image
-          src="/page.png"
+          src="/laundry.png"
           alt="Picture"
           width={900}
           height={200}
@@ -124,64 +124,72 @@ const admin = ({ token }) => {
       </div>
       <div className={styles.container}>
         <Navbar />
-        <h1><ins>customer Data Edit </ins></h1>
-        <div className={styles.form_add}>
-          <h2>Add customers</h2>
-          CustomerID:
-          <input
-            type="text"
-            name="CustomerID"
-            value = {CustomerID}
-            onChange={(e) => setCustomerID(e.target.value)}
-          ></input>
-          Name:
-          <input
-            type="text"
-            name="name"
-            value = {name}
-            onChange={(e) => setName(e.target.value)}
-          ></input>
-          Surname:
-          <input
-            type="text"
-            name="surname"
-            value = {surname}
-            onChange={(e) => setSurname(e.target.value)}
-          ></input>
-          Status:
-          <input
-            type="text"
-            name="status"
-            value = {status}
-            onChange={(e) => setStatus(e.target.value)}
-          ></input>
-          Price:
-          <input
-            type="number"
-            name="price"
-            value = {price}
-            onChange={(e) => setPrice(e.target.value)}
-          ></input>
-          <button className={styles.button_add}
-            onClick={() => addCustomer(CustomerID, name, surname, status, price)}
-          >
-            Add
-          </button>
-        </div>
-        <div ><h2>STATUS</h2></div>
-        <div>
-          <button   onClick= {() => setStatus("Washing") }>
-            Washing
-          </button>
-          <button   onClick= {() => setStatus("Rinse") }>
-            Rinse
-          </button>
-          <button   onClick= {() => setStatus("Air Dry") }>
-            Air Dry
-          </button>
-          <button   onClick= {() => setStatus("Spin dryer") }>
-            Spin dryer
-          </button>
+        <div className={styles.fontTitle}><h1>For Admin Edit Data</h1></div>
+        <div className={styles.form}>
+          <tr>
+            <th>
+              <div className={styles.form_add}>
+                <h2>Add customers</h2>
+                CustomerID:
+                <input
+                  type="text"
+                  name="CustomerID"
+                  value = {CustomerID}
+                  onChange={(e) => setCustomerID(e.target.value)}
+                ></input>
+                Name:
+                <input
+                  type="text"
+                  name="name"
+                  value = {name}
+                  onChange={(e) => setName(e.target.value)}
+                ></input>
+                Surname:
+                <input
+                  type="text"
+                  name="surname"
+                  value = {surname}
+                  onChange={(e) => setSurname(e.target.value)}
+                ></input>
+                Status:
+                <input
+                  type="text"
+                  name="status"
+                  value = {status}
+                  onChange={(e) => setStatus(e.target.value)}
+                ></input>
+                Price:
+                <input
+                  type="number"
+                  name="price"
+                  value = {price}
+                  onChange={(e) => setPrice(e.target.value)}
+                ></input>
+                <button className={styles.button_add}onClick={() => addCustomer(CustomerID, name, surname, status, price)}>
+                  Add
+                </button>
+              </div> 
+            </th>
+            <div className={styles.form_add1}>
+            <div className={styles.textstatusID}><h2>STATUS</h2></div>
+            <div>
+              <button   className={styles.statusID} onClick= {() => setStatus("Washing") }>
+                Washing
+              </button> <br />
+              <button   className={styles.statusID} onClick= {() => setStatus("Rinse") }>
+                Rinse
+              </button> <br />
+              <button   className={styles.statusID} onClick= {() => setStatus("Air Dry") }>
+                Air Dry
+              </button> <br />
+              <button   className={styles.statusID} onClick= {() => setStatus("Spin dryer") }>
+                Spin dryer
+              </button> <br />
+              <button   className={styles.statusFinished} onClick= {() => setStatus("Finished") }>
+                Finished
+              </button>
+            </div></div>
+          </tr>
         </div>
         <div className={styles.list}>{showCustomers()}</div>
       </div>

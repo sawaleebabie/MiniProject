@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Varela+Round&display=swap');
+.container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Karantina', cursive;
+    font-family: 'Varela Round', sans-serif;
+}
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Karantina', cursive;
+    font-family: 'Varela Round', sans-serif;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Karantina', cursive;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    color: rgb(146, 198, 207);
+}
+.thank{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Karantina', cursive;
+    font-family: 'Varela Round', sans-serif;
+}

@@ -28,7 +28,7 @@ export default function Logout({ token }) {
             </Head>
             <div>
                 <Image
-                    src="/page.png"
+                    src="/laundry.png"
                     alt="Picture"
                     width={900}
                     height={200}
@@ -38,12 +38,19 @@ export default function Logout({ token }) {
             <div className={styles.container}>
                 <Navbar/>
                 <div  className={styles.Logout}>
-                    <h1>Logout</h1>
+                    <div className={styles.text1}><h1>Logout</h1></div>
                     <div>
                         <h2> {status}  </h2>
                     </div>
                 </div>
-                
+                <div className={styles.Logout}>
+                    <Image
+                        src="/check.png"
+                        alt="Picture"
+                        width={100}
+                        height={100}
+                    />
+                </div>             
             </div>
         </Layout>
     )

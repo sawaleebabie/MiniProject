@@ -60,7 +60,7 @@ export default function CustomerPage({ token }) {
       <div>
         <div>
           <Image
-            src="/page.png"
+            src="/laundry.png"
             alt="Picture"
             width={900}
             height={200}
@@ -69,11 +69,13 @@ export default function CustomerPage({ token }) {
         </div>
         <div className={styles.container}>        
           <Navbar />
-          <h1><ins>For Customer Add Data</ins></h1>
-          <tr>
+          <div className={styles.fontTitle}><h1>For Customer Add Data </h1></div>
+          
+          <div className={styles.form}>
+            <tr>
             <th>
               <div className={styles.form_add}>
-                <h2 className={styles.addyourData}>Add your Data</h2>
+                <h2>Add your Data</h2>
                 CustomerID:
                 <input
                   type="text"
@@ -114,9 +116,10 @@ export default function CustomerPage({ token }) {
                   onClick={() => addCustomer(CustomerID, name, surname, status, price)}>
                   Add
                 </button>
+                <div className={styles.textConfirm}><h5>Please Wait Admin confirm...</h5> </div>
               </div>
             </th>
-            <th>
+
               <div className={styles.form_add1}> 
               <div className={styles.wight}><h2>Wight: 25-30 Kg Temperature : HOT Time: 30 Minute</h2></div>
                 <div>
@@ -209,8 +212,11 @@ export default function CustomerPage({ token }) {
                   </button>
                 </div>
               </div>
-            </th>           
+          
           </tr>
+          </div>
+          
+            
           <tr>
             <div className={styles.list}>{showCustomers()}</div>
           </tr>       

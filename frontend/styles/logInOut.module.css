@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Varela+Round&display=swap');
 .container {
     min-height: 100vh;
     padding: 0 0.5rem;
@@ -16,10 +17,12 @@
     display: grid;
     border: 1px solid rgba(102, 102, 102, 0.678);
     grid-template-columns: 100px auto;
-    /* margin-bottom: 16px; */
+    margin-bottom: 16px;
     background-color: rgba(219, 214, 214, 0.747);
     border-radius: 15px;
-    /* padding: 10px 50px 10px 50px; */
+    padding: 10px 20px 10px 20px;
+    font-family: 'Karantina', cursive;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .gridContainer>div {
@@ -28,6 +31,8 @@
     text-align: left;
     padding: 10px;
     font-size: 1rem;
+    font-family: 'Karantina', cursive;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .gridContainer>div>input {
@@ -39,6 +44,8 @@
     box-sizing: border-box;
     font-size: 1.2rem;
     border-radius: 4px;
+    font-family: 'Karantina', cursive;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .btucopy {
@@ -58,24 +65,61 @@
     border:none;
 }
 .text{
-    color: blue;
+  color: rgb(106, 150, 180);
+  font-size: 14px;
+  font-family: 'Karantina', cursive;
+  font-family: 'Varela Round', sans-serif;
 }
+
+.text1{
+  color: rgb(106, 150, 180);
+  font-size: 20px;
+  font-family: 'Karantina', cursive;
+  font-family: 'Varela Round', sans-serif;
+}
+.text2{
+  color: rgb(60, 61, 61);
+  font-size: 15px;
+  border: 1px dashed rgb(194, 191, 146);
+  padding: 10px;
+  font-family: 'Karantina', cursive;
+  font-family: 'Varela Round', sans-serif;
+}
+.text3{
+  color: rgb(68, 68, 68);
+  font-size: 17px;
+  font-family: 'Karantina', cursive;
+  font-family: 'Varela Round', sans-serif;
+}
+.text4{
+  color: rgb(68, 68, 68);
+  font-size: 15px;
+  border: 0.7px solid rgb(107, 107, 107);
+  padding: 7px 7px;
+  padding-left: 5px;
+  padding-right: 30px;
+  font-family: 'Karantina', cursive;
+  font-family: 'Varela Round', sans-serif;
+  margin-right: 10px;
+}
+
 .btn{
-    background-color: #4ab64a;
-    border-radius: 50px;
-    border: none;
-    color: rgb(48, 48, 48);
-    padding: 5px 70px 5px 70px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  background-color:rgb(191, 255, 179);
+
+  border-radius: 2px;
+  border: none;
+  color: rgb(48, 48, 48);
+  padding: 10px 70px 10px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
   }
   
   .btn {
-    background-color: #4ab64a;
+    background-color: #73f873;
     color: rgb(48, 48, 48);
     font-size: 1rem;
     margin-top: 10px;
@@ -90,7 +134,6 @@
   }
   .btn1{
     background-color: #c4ad47;
-    border-radius: 35px;
     border: none;
     color: rgb(48, 48, 48);
     padding: 8px 8px;
@@ -98,12 +141,11 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
   }
   
   .btn1 {
-        background-color: #c4ad47;
+        background-color: #f8dd63;
         color: rgb(48, 48, 48);
         font-size: 1rem;
         margin-top: 10px;
@@ -114,15 +156,14 @@
     background-color: #c5c2b1;
       color: #fff;
       font-size: 1rem;
-      margin-top: 10px;
       border: none;
   }
   .btn2{
     background-color:rgb(69, 145, 180);
-    border-radius: 35px;
+    border-radius: 2px;
     border: none;
     color: rgb(48, 48, 48);
-    padding: 5px 70px 5px 70px;
+    padding: 10px 70px 10px 70px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -160,3 +201,46 @@
     align-items: center;
     background-color: rgb(255, 255, 255);
   }
+
+  .btnRe{
+    background-color:rgb(135, 238, 115);
+    border-radius: 2px;
+    border: none;
+    color: rgb(48, 48, 48);
+    padding: 10px 52px 10px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .btnRe span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btnRe span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btnRe:hover span {
+    padding-right: 25px;
+  }
+  
+  .btnRe:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+

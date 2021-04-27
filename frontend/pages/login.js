@@ -56,10 +56,9 @@ export default function Login({ token }) {
           name="remember_me"
           type="checkbox"
           onClick={reMem}
-        />
-       
+        /> 
       </div> 
-      <div className={styles.text}><label><ins><b>Remember Me</b></ins></label></div>
+      <div ><label><ins><b>Remember Me</b></ins></label></div>
     </div>
   );
 
@@ -74,7 +73,7 @@ export default function Login({ token }) {
       </Head>
       <div>
           <Image
-            src="/page.png"
+            src="/laundry.png"
             alt="Picture"
             width={900}
             height={200}
@@ -84,22 +83,21 @@ export default function Login({ token }) {
       <div className={styles.container}>
         <Navbar />
         <div className={styles.Login}>
-          <h1>Login</h1>
-        <div>
-          <b>Token:</b> {token.substring(0, 15)}...
-          <button className={styles.btn1} onClick={copyText}> Copy token </button>
-        </div>
-        <br />
-        <div>Status: {status}</div>
-        <br />
-        {loginForm()}
-        <Link href="/register"><a> <b>REGISTER</b> </a></Link> 
-        <div>
-          <button className={styles.btn2} onClick={login}>Login</button>
-        </div>
-        </div>
-        
-        
+          <div className={styles.text1}><h1>Login</h1></div>
+          <div className={styles.text2}>Status: {status}</div> <br />
+          {loginForm()}
+          <div>
+            <button className={styles.btn2} onClick={login}>LOGIN</button>
+            <button className={styles.btnRe}><Link href="/register"><a> <span>REGISTER</span> </a></Link></button>     
+          </div>
+          <br /><br />
+          <div className={styles.text3}>
+              <b>Token:</b> <b className={styles.text4}>{token.substring(0, 15)}...</b>
+              <button className={styles.btn1} onClick={copyText}> COPY </button>
+              <button className={styles.btn1} onClick={() => {window.open('https://jwt.io');}}> CHECK</button>
+          </div>
+
+        </div> 
       </div>
     </Layout>
   ); 

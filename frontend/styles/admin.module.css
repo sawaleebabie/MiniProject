@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Varela+Round&display=swap');
 .button_get {
   background-color: rgb(25, 104, 25);
   border-radius: 10px;
@@ -70,7 +71,7 @@
   padding: 15px;
   flex-wrap: wrap;
   width: 80vw;
-}
+} 
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -80,6 +81,8 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255);
+  font-family: 'Karantina', cursive;
+  font-family: 'Varela Round', sans-serif;
 }
 .listItem {
   display: flex;
@@ -89,11 +92,13 @@
   border: 2px solid rgb(151, 151, 151);
   border-radius: 10px;
   font-size: 1rem;
+  font-family: 'Karantina', cursive;
+  font-family: 'Varela Round', sans-serif;
 }
 .listItem > div{
   margin: 8px 8px;
 }
-.form_add {
+.form_add { 
   display: flex;
   flex-direction: column;
   margin: 20px;
@@ -103,9 +108,66 @@
   border-radius: 10px;
   text-align: center;
 }
+.form_add1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 50px;
+}
 
 .text {
   text-align: center;
   color: rgb(40, 185, 35);
   size: 15px;
+}
+
+.statusID {
+  background-color: rgb(255, 226, 62);
+  border-radius: 10px;
+  border: none;
+  color: rgb(95, 94, 94);
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.statusID:hover{
+  background-color: #c5c2b1;
+  color: #fff;
+} 
+.textstatusID{
+  text-align: center;
+  color: darkgoldenrod;
+}
+
+.statusFinished{
+  background-color: rgb(139, 250, 117);
+  border-radius: 10px;
+  border: none;
+  color: rgb(95, 94, 94);
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.statusFinished:hover{
+  background-color: #c5c2b1;
+  color: #fff;
+} 
+
+.fontTitle{
+  font-size: 25px;
+  color: rgb(81, 110, 138);
 }

@@ -13,7 +13,7 @@ const index = () => {
   if (error) return <div>failed to load</div>;
   if (!data) return <div>Loading...</div>;
   console.log("data", data);
-  
+   
   const showCustomers = () => {
     if (data.list && data.list.length) {
       return data.list.map((item, index) => {
@@ -38,7 +38,7 @@ const index = () => {
       </Head>
       <div>
         <Image
-          src="/page.png"
+          src="/laundry.png"
           alt="Picture"
           width={900}
           height={200}
@@ -48,7 +48,8 @@ const index = () => {
       <div className={styles.container}>
         <Navbar />
         <div className={styles.container1}>
-          <div className={styles.title}></div>
+          <div className={styles.title}>
+          <marquee bgcolor="White" direction="lefe" scrollamount="8" width="100%">Welcome to Laundry 24 Hours</marquee></div>
           <div className={styles.list}>
             {showCustomers()}
           </div> 
