@@ -8,7 +8,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 
 
-const URL = `${config.URL}/api/laundry`;
+const URL = `${config.URL}/laundry`;
 
 const admin = ({ token }) => {
   const [user, setUser] = useState({});

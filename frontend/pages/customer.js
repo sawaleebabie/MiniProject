@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 import config from '../config/config'
 export default function CustomerPage({ token }) {
-  const URL = `${config.URL}/api/laundry`;
+  const URL = `${config.URL}/laundry`;
 
   const [user, setUser] = useState({});
   const [customers, setCustomers] = useState({});
