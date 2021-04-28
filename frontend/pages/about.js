@@ -22,7 +22,7 @@ const about = () => {
             <h2>Contact Me</h2>
             <div className={styles.datacontainer}><div>
                 <Image
-                    src = "/check.png"
+                    src = "/facebook.png"
                     alt="Picture"
                     width={50}
                     height={50}
@@ -31,7 +31,7 @@ const about = () => {
             </div> 
             <div>
                 <Image
-                    src="/check.png"
+                    src="/line.png"
                     alt="Picture"
                     width={50}
                     height={50}
@@ -40,7 +40,7 @@ const about = () => {
             </div> 
             <div>
                 <Image
-                    src= "/check.png"
+                    src= "/call.png"
                     alt="Picture"
                     width={50}
                     height={50}
