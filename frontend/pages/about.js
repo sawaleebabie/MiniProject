@@ -7,7 +7,6 @@ import Head from 'next/head'
 import Image from 'next/image' 
 import Link from 'next/link'
 
-
 const URL = `${config.URL}/laundry`;
 const about = () => {
   
@@ -23,7 +22,7 @@ const about = () => {
             <h2>Contact Me</h2>
             <div className={styles.datacontainer}><div className={styles.dataPic}>
                 <Image
-                    src="/facebook.png"
+                    hraf = "https://farmto.co.th/static/assets/facebook-brands.svg"
                     alt="Picture"
                     width={50}
                     height={50}
