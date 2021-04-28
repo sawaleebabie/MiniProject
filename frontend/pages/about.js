@@ -1,4 +1,4 @@
-import React, { } from "react";
+import React from "react";
 import Layout from '../components/layout' ;
 import Navbar from "../components/navbar";
 import config from '../config/config';
@@ -22,7 +22,7 @@ const about = () => {
             <h2>Contact Me</h2>
             <div className={styles.datacontainer}><div className={styles.dataPic}>
                 <Image
-                    hraf = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fsimpleicon.com%2Ffacebook-2.html&psig=AOvVaw3EP_0TES6PAJ7qQrQbZv3M&ust=1619713590785000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJj2tLutofACFQAAAAAdAAAAABAD"
+                    src = "/facebook.png"
                     alt="Picture"
                     width={50}
                     height={50}
@@ -40,7 +40,7 @@ const about = () => {
             </div> 
             <div className={styles.dataPic}>
                 <Image
-                    src="/call.png"
+                    src= "/call.png"
                     alt="Picture"
                     width={50}
                     height={50}
