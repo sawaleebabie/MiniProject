@@ -6,9 +6,9 @@ import styles from "../styles/suggest.module.css";
 import Head from 'next/head'
 import Image from 'next/image' 
 import Link from 'next/link'
+import config from '../config/config'
 
-
-const URL = "http://localhost:8080/api/laundry";
+const URL = `${config.URL}/api/laundry`;
 const about = () => {
   
   return (

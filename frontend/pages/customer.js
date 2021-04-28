@@ -4,9 +4,9 @@ import Navbar from "../components/navbar";
 import styles from "../styles/customer.module.css";
 import Image from 'next/image'
 import Head from 'next/head'
-
+import config from '../config/config'
 export default function CustomerPage({ token }) {
-  const URL = "http://localhost:8080/api/laundry";
+  const URL = `${config.URL}/api/laundry`;
 
   const [user, setUser] = useState({});
   const [customers, setCustomers] = useState({});

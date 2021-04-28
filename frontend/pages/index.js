@@ -5,8 +5,8 @@ import Navbar from "../components/navbar";
 import styles from "../styles/Index.module.css";
 import Image from 'next/image' 
 import Head from 'next/head' 
-
-const URL = "http://localhost:8080/api/laundry";
+import config from '../config/config'
+const URL = `${config.URL}/api/laundry`;
 const fetcher = (key) => fetch(key).then((res) => res.json());
 
 const index = () => {

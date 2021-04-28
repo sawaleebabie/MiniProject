@@ -7,7 +7,7 @@ import Head from 'next/head'
 import Image from 'next/image' 
 import Link from 'next/link'
 
-const URL = "http://localhost:8080/api/laundry";
+const URL = `${config.URL}/api/laundry`;
 const suggest = () => {
   
   return (

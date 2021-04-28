@@ -8,7 +8,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 
 
-const URL = "http://localhost:8080/api/laundry";
+const URL = `${config.URL}/api/laundry`;
 
 const admin = ({ token }) => {
   const [user, setUser] = useState({});
@@ -21,8 +21,10 @@ const admin = ({ token }) => {
   const [customer, setCustomer] = useState({});
 
   useEffect(() => {
+  //  if(localStorage.getItem('token') != null) {
     getCustomers();
     profileUser();
+  //  }
   }, []);
 
   const profileUser = async () => {
