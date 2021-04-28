@@ -20,7 +20,7 @@ const about = () => {
         <Navbar />
         <div className={styles.data}>
             <h2>Contact Me</h2>
-            <div className={styles.datacontainer}><div>
+            <div className={styles.datacontainer}><div className={styles.dataPic}>
                 <Image
                     src = "/facebook.PNG"
                     alt="Picture"
@@ -29,7 +29,7 @@ const about = () => {
                 />
                 <h1>Sawalee Khongyuen</h1>
             </div> 
-            <div>
+            <div className={styles.dataPic}>
                 <Image
                     src="/line.PNG"
                     alt="Picture"
@@ -38,7 +38,7 @@ const about = () => {
                 />
                 <h1>5935512054</h1>
             </div> 
-            <div>
+            <div className={styles.dataPic}>
                 <Image
                     src= "/call.PNG"
                     alt="Picture"
