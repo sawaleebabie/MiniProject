@@ -1,11 +1,11 @@
-import Head from "next/head";
-import Link from 'next/link'
-import Layout from "../components/layout";
 import { useState } from "react";
-import Navbar from "../components/navbar";
-import styles from "../styles/logInOut.module.css";
 import axios from "axios";
+import Layout from "../components/layout";
+import Navbar from "../components/navbar";
 import config from "../config/config";
+import styles from "../styles/logInOut.module.css";
+import Head from "next/head"
+import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Login({ token }) {

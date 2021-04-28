@@ -5,7 +5,7 @@ const PROD_URL = 'https://production.werapun.com/api';
 console.log('node env', process.env.NODE_ENV);
 
 const common = {
-    PORT: 80 
+    PORT: 8080 
 }
 
 const development = {

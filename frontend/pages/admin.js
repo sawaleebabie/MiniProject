@@ -1,13 +1,14 @@
-import axios from "axios";
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import withAuth from "../components/withAuth";
 import Navbar from "../components/navbar";
-import styles from "../styles/admin.module.css";
-import Image from 'next/image' 
-import Head from 'next/head' 
 import config from '../config/config'
+import styles from "../styles/admin.module.css";
+import Image from 'next/image'
+import Head from 'next/head'
 
-const URL = "http://localhost:8080/api/laundry"; 
+
+const URL = "http://localhost:8080/api/laundry";
 
 const admin = ({ token }) => {
   const [user, setUser] = useState({});
@@ -23,12 +24,12 @@ const admin = ({ token }) => {
     getCustomers();
     profileUser();
   }, []);
-  
+
   const profileUser = async () => {
-    try {    
+    try {
       const users = await axios.get(`${config.URL}/profile`, {
         headers: { Authorization: `Bearer ${token}` },
-      });  
+      });
       setUser(users.data);
     } catch (e) {
       console.log(e);
@@ -44,8 +45,8 @@ const admin = ({ token }) => {
     setSurname(result.data.surname)
     setStatus(result.data.status)
     setPrice(result.data.price)
-}
- 
+  }
+
   const getCustomers = async () => {
     let result = await axios.get(URL);
     setCustomers(result.data.list);
@@ -88,7 +89,7 @@ const admin = ({ token }) => {
             <div><b>CustomerID:</b> {item.CustomerID}</div>
             <div><b>Name:</b> {item.name}</div>
             <div><b>Surname:</b> {item.surname}</div>
-            <div><b>Status:</b> {item.status}</div>
+            <div><b>Status:</b> <q>{item.status}</q></div>
             <div><b>Price:</b> {item.price}</div>
             <div className={styles.edit_button}>
               <button className={styles.button_get}
@@ -114,10 +115,10 @@ const admin = ({ token }) => {
       return <p>Loading...</p>;
     }
   };
-  return ( 
+  return (
     <div>
       <Head>
-          <title>Admin</title>
+        <title>Admin</title>
       </Head>
       <div>
         <Image
@@ -135,14 +136,14 @@ const admin = ({ token }) => {
           <tr>
             <th>
               <div className={styles.form_add}>
-                <h2>Add customers</h2>       
+                <h2>Add customers</h2>
                 <div className={styles.adminPage}>
                   <div><b>CustomerID: </b></div>
                   <div>
                     <input
                       type="text"
                       name="CustomerID"
-                      value = {CustomerID}
+                      value={CustomerID}
                       onChange={(e) => setCustomerID(e.target.value)}
                     ></input>
                   </div>
@@ -152,71 +153,71 @@ const admin = ({ token }) => {
                     <input
                       type="text"
                       name="name"
-                      value = {name}
+                      value={name}
                       onChange={(e) => setName(e.target.value)}
                     ></input>
                   </div>
 
-                <div><b>Surname:</b></div>
-                <div>
-                  <input   
-                    type="text"
-                    name="surname"
-                    value = {surname}
-                    onChange={(e) => setSurname(e.target.value)}
-                  ></input>
+                  <div><b>Surname:</b></div>
+                  <div>
+                    <input
+                      type="text"
+                      name="surname"
+                      value={surname}
+                      onChange={(e) => setSurname(e.target.value)}
+                    ></input>
+                  </div>
+
+                  <div><b>Status:</b></div>
+                  <div>
+                    <input
+                      type="text"
+                      name="status"
+                      value={status}
+                      onChange={(e) => setStatus(e.target.value)}
+                    ></input>
+                  </div>
+
+                  <div><b>Price:</b></div>
+                  <div>
+                    <input
+                      type="number"
+                      name="price"
+                      value={price}
+                      onChange={(e) => setPrice(e.target.value)}
+                    ></input>
+                  </div>
                 </div>
 
-                <div><b>Status:</b></div>
-                <div>
-                  <input
-                    type="text"
-                    name="status"
-                    value = {status}
-                    onChange={(e) => setStatus(e.target.value)}
-                  ></input>
-                </div>
-
-               <div><b>Price:</b></div>
-               <div>
-                 <input
-                  type="number"
-                  name="price"
-                  value = {price}
-                  onChange={(e) => setPrice(e.target.value)}
-                ></input>
-              </div>
-              </div>
-                
-                <button className={styles.button_add}onClick={() => addCustomer(CustomerID, name, surname, status, price)}>
+                <button className={styles.button_add} onClick={() => addCustomer(CustomerID, name, surname, status, price)}>
                   Add
                 </button>
-              </div> 
+              </div>
             </th>
             <div className={styles.form_add1}>
-            <div className={styles.textstatusID}><h2>STATUS</h2></div>
-            <div>
-              <button   className={styles.statusID} onClick= {() => setStatus("Washing") }>
-                Washing
+              <div className={styles.textstatusID}><h2>STATUS</h2></div>
+              <div>
+                <button className={styles.statusID} onClick={() => setStatus("Washing")}>
+                  Washing
               </button> <br />
-              <button   className={styles.statusID} onClick= {() => setStatus("Rinse") }>
-                Rinse
+                <button className={styles.statusID} onClick={() => setStatus("Rinse")}>
+                  Rinse
               </button> <br />
-              <button   className={styles.statusID} onClick= {() => setStatus("Air Dry") }>
-                Air Dry
+                <button className={styles.statusID} onClick={() => setStatus("Air Dry")}>
+                  Air Dry
               </button> <br />
-              <button   className={styles.statusID} onClick= {() => setStatus("Spin dryer") }>
-                Spin dryer
+                <button className={styles.statusID} onClick={() => setStatus("Spin dryer")}>
+                  Spin dryer
               </button> <br />
-              <button   className={styles.statusFinished} onClick= {() => setStatus("Finished") }>
-                Finished
+                <button className={styles.statusFinished} onClick={() => setStatus("Finished")}>
+                  Finished
               </button>
-            </div></div>
+              </div></div>
           </tr>
         </div>
         <div className={styles.list}>{showCustomers()}</div>
       </div>
-    </div>   
+    </div>
   );
 };
 export default withAuth(admin);

@@ -1,12 +1,13 @@
-import Layout from '../components/layout' 
 import React, { } from "react";
+import Layout from '../components/layout' ;
 import Navbar from "../components/navbar";
-import Image from 'next/image' 
+import config from '../config/config';
 import styles from "../styles/suggest.module.css";
 import Head from 'next/head'
-import config from '../config/config'
-const URL = "http://localhost:8080/api/laundry";
+import Image from 'next/image' 
 
+
+const URL = "http://localhost:8080/api/laundry";
 const suggest = () => {
   
   return (

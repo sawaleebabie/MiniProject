@@ -27,6 +27,7 @@
   font-family: 'Varela Round', sans-serif;
 
 }
+
 .buttonNav:hover {
   background-color: #e9e89b;
   color: rgb(58, 58, 58);
@@ -48,6 +49,7 @@
   font-family: 'Ubuntu Condensed', sans-serif;
   font-family: 'Varela Round', sans-serif;
 }
+
 .buttonNavLogout:hover {
   background-color: #e9e89b;
   color: rgb(58, 58, 58);
@@ -70,6 +72,7 @@
   font-family: 'Ubuntu Condensed', sans-serif;
   font-family: 'Varela Round', sans-serif;
 }
+
 .buttonNavLogin:hover {
   background-color: #e9e89b;
   color: rgb(58, 58, 58);

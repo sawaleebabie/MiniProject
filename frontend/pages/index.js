@@ -1,11 +1,10 @@
-import Head from 'next/head' 
-import Layout from '../components/layout' 
 import useSWR, { mutate } from "swr";
 import React, { } from "react";
+import Layout from '../components/layout' 
 import Navbar from "../components/navbar";
-import Image from 'next/image' 
 import styles from "../styles/Index.module.css";
-
+import Image from 'next/image' 
+import Head from 'next/head' 
 
 const URL = "http://localhost:8080/api/laundry";
 const fetcher = (key) => fetch(key).then((res) => res.json());
@@ -24,7 +23,7 @@ const index = () => {
             <div><b>CustomerID:</b> {item.CustomerID}</div>
             <div><b>Name:</b> {item.name}</div>
             <div><b>Surname:</b> {item.surname}</div>
-            <div><b>Status:</b> {item.status} </div>
+            <div><b>Status:</b> <q>{item.status}</q> </div>
             <div><b>Price:</b> {item.price}</div>
           </div>
         );

@@ -1,111 +1,119 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Varela+Round&display=swap');
-  .button_add {
-    background-color: rgb(29, 119, 204);
-    border: none;
-    color: white;
-    padding: 5px 5px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    margin-top: 15px;
-  }
-  .list {
-    display: flex;
-    justify-content: center;
-    font-family: "Monaco",  monospace;
-    list-style: none;
-    margin: 10px;
-    padding: 1px;
-    flex-wrap: wrap;
-    width: 80vw;
-    font-family: 'Karantina', cursive;
-    font-family: 'Varela Round', sans-serif;
-  }
-  .list1 {
-    background-color: rgb(75, 105, 93);
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 35px;
-    padding: 15px;
-    flex-wrap: wrap;
-    width: 80vw;
-  }
-  .container { 
-    min-height: 100vh;
-    padding: 0 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    font-family: 'Karantina', cursive;
-    font-family: 'Varela Round', sans-serif;
-  }
+.button_add {
+  background-color: rgb(29, 119, 204);
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: 15px;
+}
 
-  .listItem {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    padding: 10px;
-    border: 2px solid rgb(151, 151, 151);
-    border-radius: 10px;
-    font-size: 1rem;
-  }
-  .listItem > div{
-    margin: 8px 8px;
-  }
-  .form_add {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    padding-left: 50px;
-    padding-right: 30px;
-    /* border: 8px solid rgba(0, 0, 0, 0.205); */
-    font-size: 1.6rem;
-    border-radius: 10px;
-    text-align: center;
-  }
+.list {
+  display: flex;
+  justify-content: center;
+  font-family: "Monaco",  monospace;
+  list-style: none;
+  margin: 10px;
+  padding: 1px;
+  flex-wrap: wrap;
+  width: 80vw;
+  font-family: 'Karantina', cursive;
+  font-family: 'Varela Round', sans-serif;
+}
 
-  .form_add1 {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    font-size: 1.4rem;
-    border-radius: 10px;
-    text-align: center;
-  }
+.list1 {
+  background-color: rgb(75, 105, 93);
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 35px;
+  padding: 15px;
+  flex-wrap: wrap;
+  width: 80vw;
+}
+
+.container { 
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Karantina', cursive;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid rgb(151, 151, 151);
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.listItem > div{
+  margin: 8px 8px;
+}
+
+.listItem > div > q{
+  color: rgb(5, 146, 0);
+}
+
+.form_add {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 30px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form_add1 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  text-align: center;
+}
   
-  .text {
-    text-align: center;
-    color: rgb(40, 185, 35);
-    size: 15px;
-  }
+.text {
+  text-align: center;
+  color: rgb(40, 185, 35);
+  size: 15px;
+} 
 
-  .button_ID {
-    background-color: rgb(134, 185, 187);
-    border-radius: 10px;
-    border: none;
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
+.button_ID {
+  background-color: rgb(134, 185, 187);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 .button_ID:hover{
-    background-color: #c5c2b1;
-    color: #fff;
-  } 
+  background-color: #c5c2b1;
+  color: #fff;
+} 
   
-  .button_ID:after {
-    background-color: aliceblue;
-  }
+.button_ID:after {
+  background-color: aliceblue;
+}
 
 
 

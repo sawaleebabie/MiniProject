@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Navbar from "../components/navbar";
 import styles from "../styles/customer.module.css";
-import axios from "axios";
 import Image from 'next/image'
 import Head from 'next/head'
 
@@ -51,7 +51,7 @@ export default function CustomerPage({ token }) {
           )
         } else {
           return (
-            <button className={styles.button_ID} style={{ backgroundColor: "red" }} disabled={true}>{name}</button>
+            <button className={styles.button_ID} style={{ backgroundColor: "FireBrick" }} disabled={true}>{name}</button>
           )
         }
       }
@@ -61,7 +61,6 @@ export default function CustomerPage({ token }) {
   const getCustomers = async () => {
     let result = await axios.get(URL);
     setCustomers(result.data.list);
-
   };
 
   const addCustomer = async () => {
@@ -84,7 +83,7 @@ export default function CustomerPage({ token }) {
             <div><b>CustomerID:</b> {item.CustomerID}</div>
             <div><b>Name:</b> {item.name}</div>
             <div><b>Surname:</b> {item.surname}</div>
-            <div><b>Status:</b> {item.status}</div>
+            <div><b>Status:</b> <q>{item.status}</q></div>
             <div><b>Price:</b> {item.price}</div>
           </div>
         );
@@ -163,44 +162,30 @@ export default function CustomerPage({ token }) {
 
             <div className={styles.form_add1}>
               <div className={styles.wight}><h2>Wight: 25-30 Kg Temperature : HOT Time: 30 Minute</h2></div>
-              <div>
-                {rendersome(Gm1, Gm1Price)}
+              <div>{rendersome(Gm1, Gm1Price)}</div>
 
-              </div>
               <div className={styles.wight}><h2>Wight: 25-30 Kg Temperature : Medium Time: 40 Minute</h2></div>
-              <div>
-                {rendersome(Gm2, Gm2Price)}
+              <div>{rendersome(Gm2, Gm2Price)}</div>
 
-              </div>
               <div className={styles.wight}><h2>Wight: 20-25 Kg Temperature : HOT Time: 45 Minute</h2></div>
-              <div>
-                {rendersome(Gm3, Gm3Price)}
+              <div>{rendersome(Gm3, Gm3Price)}</div>
 
-              </div>
               <div className={styles.wight}><h2>Wight: 20-25 Kg Temperature : Medium Time: 50 Minute</h2></div>
-              <div>
-                {rendersome(Gm4, Gm4Price)}
+              <div>{rendersome(Gm4, Gm4Price)}</div>
 
-              </div>
               <div className={styles.wight}><h2>Wight: 15-20 Kg Temperature : Medium Time: 55 Minute</h2></div>
-              <div>
-                {rendersome(Gm5, Gm5Price)}
+              <div>{rendersome(Gm5, Gm5Price)}</div>
 
-              </div>
               <div className={styles.wight}><h2>Wight: 10-15 Kg Temperature : Medium Time: 60 Minute</h2></div>
-              <div>
-                {rendersome(Gm6, Gm6Price)}
-
-              </div>
+              <div>{rendersome(Gm6, Gm6Price)}</div>
             </div>
-
           </tr>
         </div>
-
 
         <tr>
           <div className={styles.list}>{showCustomers()}</div>
         </tr>
+
       </div>
     </div>
   );

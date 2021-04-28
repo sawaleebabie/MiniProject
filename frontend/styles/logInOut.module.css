@@ -1,63 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Varela+Round&display=swap');
 .container {
-    min-height: 100vh;
-    padding: 0 0.5rem;
-    /* display: flex; */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
 }
 
 .content {
-    min-width: 25vw;
+  min-width: 25vw;
 }
 
 .gridContainer {
-    display: grid;
-    border: 1px solid rgba(102, 102, 102, 0.678);
-    grid-template-columns: 100px auto;
-    margin-bottom: 16px;
-    background-color: rgba(219, 214, 214, 0.747);
-    border-radius: 15px;
-    padding: 10px 20px 10px 20px;
-    font-family: 'Karantina', cursive;
-    font-family: 'Varela Round', sans-serif;
+  display: grid;
+  border: 1px solid rgba(102, 102, 102, 0.678);
+  grid-template-columns: 100px auto;
+  margin-bottom: 16px;
+  background-color: rgba(219, 214, 214, 0.747);
+  border-radius: 15px;
+  padding: 10px 20px 10px 20px;
+  font-family: 'Karantina', cursive;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .gridContainer>div {
-    font-family: "Monaco",  monospace;
-    color: rgb(66, 66, 66);
-    text-align: left;
-    padding: 10px;
-    font-size: 1rem;
-    font-family: 'Karantina', cursive;
-    font-family: 'Varela Round', sans-serif;
+  font-family: "Monaco",  monospace;
+  color: rgb(66, 66, 66);
+  text-align: left;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: 'Karantina', cursive;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .gridContainer>div>input {
-    width: 90%;
-    padding: 2.5px 18px;
-    margin: 0px 0;
-    display: inline-block;
-    border: 1px solid rgb(195, 196, 171);
-    box-sizing: border-box;
-    font-size: 1.2rem;
-    border-radius: 4px;
-    font-family: 'Karantina', cursive;
-    font-family: 'Varela Round', sans-serif;
+  width: 90%;
+  padding: 2.5px 18px;
+  margin: 0px 0;
+  display: inline-block;
+  border: 1px solid rgb(195, 196, 171);
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  font-family: 'Karantina', cursive;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .btulogin {
-    background-color:rgb(69, 145, 180);
-    color: rgb(48, 48, 48);
-    border:none;
+  background-color:rgb(69, 145, 180);
+  color: rgb(48, 48, 48);
+  border:none;
 }
+
 .bturegister {
-    background-color: #4ab64a;
-    color: rgb(48, 48, 48);
-    border:none;
+  background-color: #4ab64a;
+  color: rgb(48, 48, 48);
+  border:none;
 }
+
 .text{
   color: rgb(106, 150, 180);
   font-size: 14px;
@@ -71,6 +72,7 @@
   font-family: 'Karantina', cursive;
   font-family: 'Varela Round', sans-serif;
 }
+
 .text2{
   color: rgb(60, 61, 61);
   font-size: 15px;
@@ -79,12 +81,14 @@
   font-family: 'Karantina', cursive;
   font-family: 'Varela Round', sans-serif;
 }
+
 .text3{
   color: rgb(68, 68, 68);
   font-size: 17px;
   font-family: 'Karantina', cursive;
   font-family: 'Varela Round', sans-serif;
 }
+
 .text4{
   color: rgb(68, 68, 68);
   font-size: 15px;
@@ -99,7 +103,6 @@
 
 .btn{
   background-color:rgb(191, 255, 179);
-
   border-radius: 2px;
   border: none;
   color: rgb(48, 48, 48);
@@ -110,106 +113,109 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  }
+}
   
-  .btn {
+.btn {
     background-color: #73f873;
     color: rgb(48, 48, 48);
     font-size: 1rem;
     margin-top: 10px;
     border: none;
-  }
-  .btn:hover{
-        background-color: #84a788;
-        color: #fff;
-        font-size: 1rem;
-        margin-top: 10px;
-        border: none;
-  }
-  
-  .btn2{
-    background-color:rgb(69, 145, 180);
-    border-radius: 2px;
-    border: none;
-    color: rgb(48, 48, 48);
-    padding: 10px 70px 10px 70px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-  
-  .btn2 {
-    background-color:rgb(69, 145, 180);
-    color: rgb(48, 48, 48);
+}
+
+.btn:hover{
+    background-color: #84a788;
+    color: #fff;
     font-size: 1rem;
     margin-top: 10px;
     border: none;
-  }
-  .btn2:hover{
-    background-color: #8bb2c9;
-      color: #fff;
-      font-size: 1rem;
-      margin-top: 10px;
-      border: none;
-  }
-
-  .Login{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-  }
-  .Logout{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-  }
-
-  .btnRe{
-    background-color:rgb(135, 238, 115);
-    border-radius: 2px;
-    border: none;
-    color: rgb(48, 48, 48);
-    padding: 10px 52px 10px 52px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 2px 2px;
-    cursor: pointer;
-    transition: all 0.5s;
-  }
-
-  .btnRe span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
+}
   
-  .btnRe span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
+.btn2{
+  background-color:rgb(69, 145, 180);
+  border-radius: 2px;
+  border: none;
+  color: rgb(48, 48, 48);
+  padding: 10px 70px 10px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
   
-  .btnRe:hover span {
-    padding-right: 25px;
-  }
+.btn2 {
+  background-color:rgb(69, 145, 180);
+  color: rgb(48, 48, 48);
+  font-size: 1rem;
+  margin-top: 10px;
+  border: none;
+}
+
+.btn2:hover{
+  background-color: #8bb2c9;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 10px;
+  border: none;
+}
+
+.Login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.Logout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.btnRe{
+  background-color:rgb(135, 238, 115);
+  border-radius: 2px;
+  border: none;
+  color: rgb(48, 48, 48);
+  padding: 10px 52px 10px 52px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btnRe span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
   
-  .btnRe:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
+.btnRe span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+  
+.btnRe:hover span {
+  padding-right: 25px;
+}
+  
+.btnRe:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 
 

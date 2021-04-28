@@ -1,18 +1,18 @@
-import Head from 'next/head'
-import Layout from '../components/layout'
-import Navbar from '../components/navbar'
-import { useEffect, useState } from 'react'
-import axios from 'axios'
-import config from '../config/config'
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import Layout from '../components/layout';
+import Navbar from '../components/navbar';
+import config from '../config/config';
 import styles from "../styles/logInOut.module.css";
-import Image from 'next/image' 
+import Image from 'next/image'
+import Head from 'next/head'
 
 export default function Logout({ token }) {
 
     const [status, setStatus] = useState('')
 
     useEffect(() => {
-        logout()
+         logout()
     }, [])
 
     const logout = async () => {
@@ -20,7 +20,7 @@ export default function Logout({ token }) {
         let result = await axios.get(`${config.URL}/logout`, { withCredentials: true })
         setStatus("Logout successful")
     }
- 
+
     return (
         <Layout>
             <Head>
@@ -36,8 +36,8 @@ export default function Logout({ token }) {
                 />
             </div>
             <div className={styles.container}>
-                <Navbar/>
-                <div  className={styles.Logout}>
+                <Navbar />
+                <div className={styles.Logout}>
                     <div className={styles.text1}><h1>Logout</h1></div>
                     <div>
                         <h2> {status}  </h2>
@@ -50,7 +50,7 @@ export default function Logout({ token }) {
                         width={100}
                         height={100}
                     />
-                </div>             
+                </div>
             </div>
         </Layout>
     )

@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import axios from 'axios';
+import styles from '../styles/logInOut.module.css';
+import Layout from '../components/layout';
+import Navbar from '../components/navbar';
+import config from '../config/config';
 import Head from 'next/head'
-import Layout from '../components/layout'
-import Navbar from '../components/navbar'
-import axios from 'axios'
-import config from '../config/config'
-import styles from '../styles/logInOut.module.css'
 
 export default function Register({ token }) {
 
@@ -33,7 +33,6 @@ export default function Register({ token }) {
         catch (e) {
             console.log(e)
         }
-
     }
 
     const registerForm = () => (
@@ -68,7 +67,6 @@ export default function Register({ token }) {
             </div>
         </div>
     )
-
 
     return (
         <Layout>
