@@ -20,27 +20,27 @@ const about = () => {
         <Navbar />
         <div className={styles.data}>
             <h2>Contact Me</h2>
-            <div className={styles.datacontainer}><div className={styles.dataPic}>
+            <div className={styles.datacontainer}><div>
                 <Image
-                    src = "/facebook.png"
+                    src = "/check.png"
                     alt="Picture"
                     width={50}
                     height={50}
                 />
                 <h1>Sawalee Khongyuen</h1>
             </div> 
-            <div className={styles.dataPic}>
+            <div>
                 <Image
-                    src="/line.png"
+                    src="/check.png"
                     alt="Picture"
                     width={50}
                     height={50}
                 />
                 <h1>5935512054</h1>
             </div> 
-            <div className={styles.dataPic}>
+            <div>
                 <Image
-                    src= "/call.png"
+                    src= "/check.png"
                     alt="Picture"
                     width={50}
                     height={50}
