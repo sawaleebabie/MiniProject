@@ -6,7 +6,7 @@ import styles from "../styles/Index.module.css";
 import Image from 'next/image' 
 import Head from 'next/head' 
 import config from '../config/config'
-const URL = `${config.URL}/api/laundry`;
+const URL = `${config.URL}/laundry`;
 const fetcher = (key) => fetch(key).then((res) => res.json());
 
 const index = () => {
