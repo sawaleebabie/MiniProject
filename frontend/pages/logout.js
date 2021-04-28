@@ -29,7 +29,7 @@ export default function Logout({ token }) {
             </Head>
             <div>
                 <Image
-                    src="/facebook.png"
+                    src="/laundry.png"
                     alt="Picture"
                     width={900}
                     height={200}
