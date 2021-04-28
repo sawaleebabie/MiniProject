@@ -1,5 +1,5 @@
 
-const LOCAL_URL = 'http://localhost:8080/api';
+const LOCAL_URL = 'https://secure-depths-51132.herokuapp.com/api';
 const PROD_URL = 'https://secure-depths-51132.herokuapp.com/api';
 
 console.log('node env', process.env.NODE_ENV);
