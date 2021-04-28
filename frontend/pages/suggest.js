@@ -5,7 +5,7 @@ import config from '../config/config';
 import styles from "../styles/suggest.module.css";
 import Head from 'next/head'
 import Image from 'next/image' 
-
+import Link from 'next/link'
 
 const URL = "http://localhost:8080/api/laundry";
 const suggest = () => {
@@ -37,9 +37,9 @@ const suggest = () => {
             width={1200}
             height={325}
           />
-        </div>
-        <div className={styles.thank}>THANK YOU</div>
-
+        </div> 
+        <div className={styles.about}><button className={styles.next}><Link href="/about"><a> <span> NEXT </span> </a></Link></button></div>
+        
       </div>
     </Layout>
   );

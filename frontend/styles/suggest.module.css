@@ -38,10 +38,107 @@
     color: rgb(146, 198, 207);
 }
 
-.thank{
+.about{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.next{
+    background-color:rgb(135, 238, 115);
+    border-radius: 2px;
+    border: none;
+    color: rgb(48, 48, 48);
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+  
+  .next span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+    
+  .next span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.5s;
+  }
+    
+  .next:hover span {
+    padding-right: 25px;
+  }
+    
+  .next:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .previous{
+    background-color:rgb(135, 238, 115);
+    border-radius: 2px;
+    border: none;
+    color: rgb(48, 48, 48);
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+  
+.previous span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+    
+.previous span:after {
+    position: absolute;
+    content: '\00ab';
+    opacity: 0;
+    top: 0;
+}
+    
+.previous:hover span {
+    padding-left: 25px;
+}
+    
+.previous:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+  
+.data{
     margin-top: 50px;
     text-align: center;
-    font-size: 25px;
-    font-family: 'Karantina', cursive;
-    font-family: 'Varela Round', sans-serif;
+}
+
+.datacontainer{
+    border: 1px solid rgb(131, 155, 158);
+    border-radius: 20px;
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+}
+
+.dataPic{
+    padding-top: 20px;
+}
+
+.dataPic > h1{
+    font-size: 16px;
+}
+
+.data > h2{
+    font-size: 40px;
 }
