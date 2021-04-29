@@ -1,4 +1,11 @@
+/* Style ของ Navbar ทั้งหมด */
+/* มีการใช้ทักษะการ กดปุ่ม ชี้ปุ่ม */
+/* มีการใช้ทักษะการ ดึง font ภายนอกมาใช้ */
+
+/* การนำ font จากภายนอกเข้ามาใช้งาน */
 @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Ubuntu+Condensed&family=Varela+Round&display=swap');
+
+/* Style สีแท็บ Navbar */
 .head {
     list-style-type: none;
     margin: 0%;
@@ -10,6 +17,7 @@
     position: sticky;
 }
 
+/* Style สีปุ่ม Navbar */
 .buttonNav{
   background-color: #33425e; 
   border: none;
@@ -28,11 +36,13 @@
 
 }
 
+/* Style สีปุ่ม Navbar  เมื่อชี้*/
 .buttonNav:hover {
   background-color: #e9e89b;
   color: rgb(58, 58, 58);
 }
 
+/* Style สีปุ่ม Navbar ส่วนของ Logout*/
 .buttonNavLogout{
   background-color: #33425e; 
   border: none;
@@ -50,11 +60,13 @@
   font-family: 'Varela Round', sans-serif;
 }
 
+/* Style สีปุ่ม Navbar ส่วนของ Logout เมื่อชี้*/
 .buttonNavLogout:hover {
   background-color: #e9e89b;
   color: rgb(58, 58, 58);
 }
 
+/* Style สีปุ่ม Navbar ส่วนของ Login*/
 .buttonNavLogin{
   background-color: #33425e; 
   border: none;
@@ -73,6 +85,7 @@
   font-family: 'Varela Round', sans-serif;
 }
 
+/* Style สีปุ่ม Navbar ส่วนของ Login เมื่อชี้*/
 .buttonNavLogin:hover {
   background-color: #e9e89b;
   color: rgb(58, 58, 58);
