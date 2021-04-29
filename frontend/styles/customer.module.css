@@ -1,6 +1,13 @@
+/* Style ของหน้านี้เป็นการจัดหน้า Customer ทั้งหมด */
+/* มีการใช้ทักษะการ กดปุ่ม ชี้ปุ่ม */
+/* มีการใช้ทักษะการ แบ่งตาราง เพื่อจัดหน้า */
+/* มีการใช้ทักษะการ ดึง font ภายนอกมาใช้ */
 
+/* การนำ font จากภายนอกเข้ามาใช้งาน */
  @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Varela+Round&display=swap');
-.button_add {
+
+/* ปุ่ม Add ไว้เพิ่มข้อมูล */
+ .button_add {
   background-color: rgb(29, 119, 204);
   border: none;
   color: white;
@@ -9,7 +16,7 @@
   font-size: 16px;
   margin: 4px 2px;
   margin-top: 15px;
-  border-radius: 5px;
+  border-radius: 5px; 
 }
 
 .button_add:hover {
@@ -18,6 +25,7 @@
   color: rgb(255, 255, 255);
 }
 
+/* แสดงรายละเอียดจากฟังก์ชัน showCustomers */
 .list {
   display: flex;
   justify-content: center;
@@ -43,6 +51,7 @@
   width: 80vw;
 }
 
+/* style หลักของทั้งหน้า  */
 .container { 
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -73,6 +82,7 @@
   color: rgb(5, 146, 0);
 }
 
+/* style ในส่วน form ของการ Add ข้อมูล พวก Text, font  */
 .form_add {
   display: flex;
   flex-direction: column;
@@ -92,13 +102,15 @@
   border-radius: 10px;
   text-align: center;
 }
-  
+ 
+/* style กำหนดสีข้อความ Status เพื่อให้ดูข้อมูลง่ายขึ้น ชัดขึ้น สีโดดเด่น */
 .text {
   text-align: center;
   color: rgb(40, 185, 35);
   size: 15px;
 } 
 
+/* style ปุ่มเลขเครื่องซักผ้า */
 .button_ID {
   background-color: rgb(134, 185, 187);
   border-radius: 10px;

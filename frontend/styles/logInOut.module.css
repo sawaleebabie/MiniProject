@@ -1,4 +1,11 @@
+/* Style ของหน้านี้เป็นการจัดหน้า Login, Logout และ Register ทั้งหมด */
+/* มีการใช้ทักษะการ กดปุ่ม ชี้ปุ่ม */
+/* มีการใช้ทักษะการ ดึง font ภายนอกมาใช้ */
+
+/* การนำ font จากภายนอกเข้ามาใช้งาน */
 @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Varela+Round&display=swap');
+
+/* style หลักของทั้งหน้า  */
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -12,6 +19,7 @@
   min-width: 25vw;
 }
 
+/* การจัดรูปแบบของกล่อง Email, Password, Username  */
 .gridContainer {
   display: grid;
   border: 1px solid rgba(102, 102, 102, 0.678);
@@ -24,6 +32,7 @@
   font-family: 'Varela Round', sans-serif;
 }
 
+/* การจัดรูปแบบของกล่อง Email, Password, Username > ในส่วนลึกลงไปอีกคือ Text <div>  ทุก Text*/
 .gridContainer>div {
   font-family: "Monaco",  monospace;
   color: rgb(66, 66, 66);
@@ -34,6 +43,7 @@
   font-family: 'Varela Round', sans-serif;
 }
 
+/* การจัดรูปแบบของกล่อง Email, Password, Username > Input*/
 .gridContainer>div>input {
   width: 90%;
   padding: 2.5px 18px;
@@ -47,18 +57,21 @@
   font-family: 'Varela Round', sans-serif;
 }
 
+/* การจัดรูปแบบปุ่ม Logout และ Login*/
 .btulogin {
   background-color:rgb(69, 145, 180);
   color: rgb(48, 48, 48);
   border:none;
 }
 
+/* การจัดรูปแบบปุ่ม Register*/
 .bturegister {
   background-color: #4ab64a;
   color: rgb(48, 48, 48);
   border:none;
 }
 
+/* หัวข้อข้อความของหน้า Login, Logout และ Register*/
 .text{
   color: rgb(106, 150, 180);
   font-size: 14px;
@@ -66,6 +79,7 @@
   font-family: 'Varela Round', sans-serif;
 }
 
+/* หัวข้อข้อความของหน้า Login, Logout และ Register*/
 .text1{
   color: rgb(106, 150, 180);
   font-size: 30px;
@@ -73,6 +87,7 @@
   font-family: 'Varela Round', sans-serif;
 }
 
+/* หัวข้อข้อความของหน้า Login, Logout และ Register*/
 .text2{
   color: rgb(60, 61, 61);
   font-size: 15px;
@@ -82,6 +97,7 @@
   font-family: 'Varela Round', sans-serif;
 }
 
+/* หัวข้อข้อความของหน้า Login, Logout และ Register*/
 .text3{
   color: rgb(68, 68, 68);
   font-size: 17px;
@@ -89,6 +105,7 @@
   font-family: 'Varela Round', sans-serif;
 }
 
+/* หัวข้อข้อความของหน้า Login, Logout และ Register*/
 .text4{
   color: rgb(68, 68, 68);
   font-size: 15px;
@@ -101,6 +118,7 @@
   margin-right: 10px;
 }
 
+/* ปุ่ม Register*/
 .btn{
   background-color:rgb(191, 255, 179);
   border-radius: 2px;
@@ -130,7 +148,8 @@
     margin-top: 10px;
     border: none;
 }
-  
+ 
+/* ปุ่ม Login*/
 .btn2{
   background-color:rgb(69, 145, 180);
   border-radius: 2px;
@@ -169,7 +188,7 @@
   background-color: rgb(255, 255, 255);
 }
 
-.Logout{
+.Logout{ 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,6 +196,7 @@
   background-color: rgb(255, 255, 255);
 }
 
+/* ปุ่ม Register แบบ Span*/
 .btnRe{
   background-color:rgb(135, 238, 115);
   border-radius: 2px;
