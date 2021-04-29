@@ -72,12 +72,7 @@ export default function CustomerPage({ token }) {
       price,
     });
     console.log(result);
-    // getCustomers();
-
-   
-    if(name !== '' &&  surname !== '') {
-      getCustomers();
-    }
+    getCustomers();
   };
 
   const showCustomers = () => {
